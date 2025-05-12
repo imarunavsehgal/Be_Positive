@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+      .pulse {
+  width: 12rem;
+  margin: 2.5rem;
+}
+.main-heading {
+    font-size: 3.5rem;
+  }
+  
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/bloodcells.png" %}');
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      </style>
+
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid justify-content-center align-items-center xyz">
+    <div class="container text-center">
+      <img class="pulse" src='{% static "image/pulse.png" %}' alt="pulse image" align="middle">
+      
+      <h1 class="main-heading">Meet a donor in seconds nearby.</h1>
+
+    </div>
+<br><br>
+
+  <p class="text-center">*BePositive is a real time platform connecting the Donor and receiver in real-time within minutes.</p>
+  <p class="text-center">*Please note BePositive is not a Blood Bank and does not involve in collection, storage and transportation of blood.</p>
+
+</section>
+
+
+  </div>
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
