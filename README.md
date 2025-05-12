@@ -4,17 +4,7 @@
 BePositive is a Django-powered web application that streamlines the process of blood donation, management, and request handling. It supports three types of users — **Admins**, **Donors**, and **Patients** — each with their own specific roles and functionalities to maintain an efficient blood donation system.
 
 ---
-
-## 🔑 User Roles & Functions
-
-### 👩‍💼 Admin
-
-To create an admin account, run:
-
-```bash
-py manage.py createsuperuser
-
-Admin Dashboard Capabilities:
+##Admin Dashboard Capabilities:
 View:
 
 Units of blood available by group
@@ -57,7 +47,7 @@ View history of all blood requests
 
 Update unit count for a specific blood group
 
-🩸 Donor
+##🩸 Donor
 Donor Capabilities:
 Register with basic details
 
@@ -83,7 +73,7 @@ Approved, Pending, and Rejected request counts
 
 ✅ Note: A Donor can donate and also request for blood.
 
-🧑‍⚕️ Patient
+##🧑‍⚕️ Patient
 Patient Capabilities:
 Sign up and log in without admin approval
 
@@ -101,43 +91,15 @@ Total blood requests made
 
 Approved, Pending, and Rejected counts
 
-🛠️ How to Run This Project
-📋 Prerequisites
-Python 3.7.6 or higher
+## 🔑 User Roles & Functions
 
-⚠️ Make sure to tick "Add Python to PATH" during installation
+### 👩‍💼 Admin
 
-🧱 Setup Steps
-Download and extract the project ZIP folder
+To create an admin account, run:
 
-Navigate to the project directory in terminal or command prompt
+```bash
+py manage.py createsuperuser
 
-  Run the following commands:
-python -m pip install -r requirements.txt
-py manage.py makemigrations
-py manage.py migrate
-py manage.py runserver
-
-Open the application in your browser:
-
-cpp
-Copy
-Edit
-http://127.0.0.1:8000/
-📦 Requirements
-Contents of requirements.txt:
-Django>=3.2
-pytz
-sqlparse
-asgiref
-django-crispy-forms
-
-Install with:
-pip install -r requirements.txt
-🧪 Testing & Development Notes
-Use Django’s admin panel for backend management
-
-Test accounts: Create users for each role to simulate system operations
 
 
 
